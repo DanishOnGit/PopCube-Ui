@@ -12,6 +12,7 @@
   --light-orange: rgb(255, 201, 180);
   --light-purple: #754c9b;
   --light-grey:rgb(190, 190, 190);
+  --very-dark-grey:rgb(105, 104, 104);
   --white-color: white;
   --black-color: black;
 }
@@ -42,7 +43,7 @@ a {
   color: inherit;
 }
 
-.examples-container {
+.examples-wrapper {
   margin-bottom: 1rem;
 }
 
@@ -57,6 +58,9 @@ a {
 }
 .brand-logo {
   font-size: 2.5rem;
+}
+.brand-logo span{
+  color:var(--pri-color);
 }
 
 .nav-list {
@@ -73,6 +77,9 @@ a {
 .nav-list li:hover {
   color: var(--pri-color);
   transition: 300ms ease;
+}
+.nav-container .small{
+  color: var(--very-dark-grey);
 }
 
 .content-container {
@@ -174,6 +181,9 @@ footer {
   padding: 2.5rem;
   background-color: black;
   color: white;
+}
+.code-icon{
+  color: var(--pri-color);
 }
 .fa-heart {
   color: var(--pri-color);

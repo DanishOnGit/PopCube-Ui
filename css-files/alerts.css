@@ -25,23 +25,27 @@
   .error .fa-times{
     margin-left: 0.5rem;
     cursor: pointer;
-    color: var(--grey-color);;
+    color: var(--grey-color);
   }
+
   .success .fa-times{
     margin-left: 0.5rem;
     cursor: pointer;
     color: var(--grey-color);
   }
+
   .warning .fa-times{
     margin-left: 0.5rem;
     cursor: pointer;
     color: var(--grey-color);
   }
+
   .info .fa-times{
     margin-left: 0.5rem;
     cursor: pointer;
     color: var(--grey-color);
   }
+
   .info .fa-times:hover{
     color:var(--black-color);
   }
@@ -49,24 +53,31 @@
   .error {
     background-color: var(--error-color);
   }
+  
   .success {
     background-color: var(--success-color);
   }
+
   .warning {
     background-color: var(--warning-color);
   }
+
   .info {
     background-color: var(--info-color);
   }
+
   .error .fa-exclamation {
     color:var(--sec-color) ;
   }
+
   .fa-check{
     color:var(--green-color);
   }
+
   .warning .fa-exclamation{
     color: var(--dark-orange-color);
   }
+  
   .fa-info{
     color: var(--link-color);
   }

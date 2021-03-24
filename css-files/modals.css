@@ -1,0 +1,46 @@
+:root {
+    --pri-color: #ff4654;
+    --sec-color: #c32e42;
+    --green-color: rgb(4, 122, 58);
+    --danger-color: rgb(223, 4, 4);
+    --link-color: rgb(11, 123, 250);
+    --grey-color: grey;
+    --light-grey-color:rgb(207, 207, 207);
+  }
+.modal-wrapper{
+    position: fixed;
+    display: none;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: white;
+    border: 1px solid var(--grey-color) ;
+    border-radius: 0.5rem;
+    z-index: 999;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header,.modal-body{
+    border-bottom: 1px solid var(--grey-color);
+    padding: 1rem;
+}
+.modal-footer{
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+}
+.modal-footer button{
+    margin: 0 0.5rem;
+}
+.modal-wrapper .fa-times{
+    color: var(--grey-color);
+    padding: 0.2em;
+    font-size: 1.2em;
+    border-radius: 0.2rem;
+}
+.modal-wrapper .fa-times:hover{
+    background-color: var(--light-grey-color);
+}

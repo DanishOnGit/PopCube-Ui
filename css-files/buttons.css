@@ -1,0 +1,165 @@
+/* Block buttons */
+:root{
+    --pri-color:#fc452e ;
+    --sec-color:#db1d08 ;
+    --green-color: rgb(4, 122, 58);
+    --danger-color: rgb(223, 4, 4);
+    --link-color: rgb(11, 123, 250);
+    --grey-color: grey;
+  }
+  
+  
+  .btn {
+    padding: 0.2em 0.5em;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  .btn-primary{
+    color: white;
+    background-color: var(--pri-color);
+  }
+  .btn-primary:hover {
+    background-color: var(--sec-color);
+    transition: 400ms ease;
+  }
+  .btn-secondary {
+    color: white;
+    background-color: var(--grey-color);
+  }
+  .btn-secondary:hover {
+    background-color: rgb(97, 97, 97);
+    transition: 400ms ease;
+  }
+  .btn-success {
+    color: white;
+    background-color: var(--green-color);
+  }
+  .btn-success:hover {
+    background-color: rgb(1, 85, 1);
+    transition: 400ms ease;
+  }
+  .btn-danger {
+    color: white;
+    background-color: var(--danger-color);
+  }
+  .btn-danger:hover {
+    background-color: rgb(185, 0, 0);
+    transition: 400ms ease;
+  }
+  .btn-link {
+    background-color: transparent;
+    color: var(--link-color);
+    border: none;
+    outline: none;
+    width: fit-content;
+    margin: 0;
+
+  }
+  .btn-link:hover {
+    background-color: rgba(95, 140, 170, 0.336);
+    transition: 400ms ease;
+  }
+  .btn-float {
+    border-radius: 50%;
+    background-color: var(--pri-color);
+    color: white;
+    border: none;
+    outline: none;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .btn-icon {
+    padding: 0.1em 0.3em;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--pri-color);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-icon-hover:hover {
+    background-color: rgb(247, 199, 199);
+    transition: 300ms ease;
+  }
+  .btn-outline-icon {
+    color: var(--pri-color);
+    padding: 0.1em 0.3em;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid var(--pri-color);
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-outline-icon-hover:hover {
+    background-color: rgb(247, 199, 199);
+    transition: 300ms ease;
+  }
+  
+  
+  /* Outline buttons */
+  
+  .btn-outline-primary {
+    color: var(--pri-color);
+  
+    border: 3px solid var(--pri-color);
+    
+    background-color: white;
+  }
+  .btn-outline-primary:hover {
+    background-color: var(--pri-color);
+    color: white;
+    transition: 300ms ease;
+  }
+  .btn-outline-secondary {
+    color: var(--grey-color);
+    border: 3px solid var(--grey-color);
+   
+    background-color: white;
+  }
+  .btn-outline-secondary:hover {
+    color: white;
+    background-color: var(--grey-color);
+    transition: 300ms ease;
+  }
+  .btn-outline-success {
+    color: var(--green-color);
+    border: 3px solid var(--green-color);
+    
+    background-color: white;
+  }
+  .btn-outline-success:hover {
+    color: white;
+    background-color: var(--green-color);
+    transition: 300ms ease;
+  }
+  .btn-outline-danger {
+    color: var(--danger-color);
+    border: 3px solid var(--danger-color);
+   
+    background-color: white;
+  }
+  .btn-outline-danger:hover {
+    color: white;
+    background-color: var(--danger-color);
+    transition: 300ms ease;
+  }
+  
+  /* Button Sizes */
+  
+  .btn-large {
+    padding: 0.5rem 2.5rem;
+    font-size: 1.5em;
+  }
+  .btn-small {
+    padding: 0.3em 0.7em;
+    font-size: 0.8em;
+  }

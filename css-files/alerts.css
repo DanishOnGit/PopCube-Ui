@@ -1,0 +1,72 @@
+:root {
+    --error-color: #fed7d7;
+    --success-color: #c6f6d5;
+    --warning-color: #feebc8;
+    --info-color: #bee3f8;
+    --dark-orange-color: orange;
+    --pri-color: #ff4654;
+    --sec-color: #c32e42;
+    --green-color: rgb(4, 122, 58);
+    --danger-color: rgb(223, 4, 4);
+    --link-color: rgb(11, 123, 250);
+    --grey-color: grey;
+    --black-color:black;
+    --light-grey-color: rgb(207, 207, 207);
+  }
+  .error,
+  .success,
+  .warning,
+  .info {
+    padding: 0.5rem;
+    width: fit-content;
+    border-radius: 0.4rem;
+  }
+  
+  .error .fa-times{
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: var(--grey-color);;
+  }
+  .success .fa-times{
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: var(--grey-color);
+  }
+  .warning .fa-times{
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: var(--grey-color);
+  }
+  .info .fa-times{
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: var(--grey-color);
+  }
+  .info .fa-times:hover{
+    color:var(--black-color);
+  }
+  
+  .error {
+    background-color: var(--error-color);
+  }
+  .success {
+    background-color: var(--success-color);
+  }
+  .warning {
+    background-color: var(--warning-color);
+  }
+  .info {
+    background-color: var(--info-color);
+  }
+  .error .fa-exclamation {
+    color:var(--sec-color) ;
+  }
+  .fa-check{
+    color:var(--green-color);
+  }
+  .warning .fa-exclamation{
+    color: var(--dark-orange-color);
+  }
+  .fa-info{
+    color: var(--link-color);
+  }

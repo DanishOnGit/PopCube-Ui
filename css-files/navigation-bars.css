@@ -1,0 +1,104 @@
+:root {
+    --pri-color: #ff4654;
+    --sec-color: #c32e42;
+    --light-orange:rgb(255, 201, 180);
+    --green-color: rgb(4, 122, 58);
+    --danger-color: rgb(223, 4, 4);
+    --link-color: rgb(11, 123, 250);
+    --grey-color: grey;
+  }
+
+  /* TYPE 1 */
+.nav-wrapper-1{
+    display: flex;
+    padding: 1rem 1rem 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color:grey;
+    color: white;
+}
+.nav-wrapper-1 .brand,.nav-wrapper-2 .brand,.nav-wrapper-3 .brand{
+    cursor: pointer;
+}
+.nav-wrapper-1 li,.nav-wrapper-2 li,.nav-wrapper-3 li,.nav-wrapper-4 li {
+    cursor: pointer;
+}
+.nav-wrapper-1 li:hover{
+color: var(--sec-color);
+transition: 300ms ease;
+}
+.nav-wrapper-2 li:hover{
+    color: var(--sec-color);
+    transition: 300ms ease;
+    }
+#list-addon-1 li{
+    padding:0.3em 2em;
+}
+
+/* TYPE 2  */
+.nav-wrapper-2,.nav-wrapper-3,.nav-wrapper-4{
+    display: flex;
+    padding: 1rem 1rem 1rem 3rem;
+    align-items: center;
+    background-color:grey;
+    color: white;
+}
+
+#list-addon-2 li{
+    padding:0.3em 1.5em;
+}
+
+/* TYPE 3 (BASIC CODE INHERITED FROM TYPE 2)*/  
+ .nav-wrapper-3{
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.nav-wrapper-3 .logoAndList-container,.nav-wrapper-4 .logoAndList-container{
+    display: flex;
+    align-items: center;
+}
+.nav-wrapper-3 li:hover{
+    color: var(--sec-color);
+    transition: 300ms ease;
+}
+.nav-wrapper-3 .search-wrapper{
+    width: max-content;
+}
+.search-wrapper_input{
+    border: none;
+    padding: 0.2rem 1rem;
+    outline: 2px solid var(--pri-color);
+}
+
+.search-wrapper{
+    position: relative;
+}
+.search-wrapper .fa-search{
+    position: absolute;
+    top: 0.35rem;
+    right: 0.6rem;
+    color: grey;
+}
+
+#list-addon-3 li{
+    padding: 0.3em 1.2em;
+}
+
+/* TYPE 4 */
+.nav-wrapper-4{
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.nav-wrapper-4 .cta-wrapper{
+    width: max-content;
+}
+.nav-wrapper-4 .btn{
+    padding: 0.2rem 0.5rem;
+}
+.nav-wrapper-4 .btn-primary{
+    padding: 0.35rem 0.5rem;
+}
+.nav-wrapper-4 li:hover{
+    color: var(--sec-color);
+    transition: 300ms ease;
+}

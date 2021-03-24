@@ -1,0 +1,131 @@
+:root {
+    --pri-color: #ff4654;
+    --sec-color: #c32e42;
+    --green-color: rgb(4, 122, 58);
+    --danger-color: rgb(223, 4, 4);
+    --link-color: rgb(11, 123, 250);
+    --white-color:white;
+    --grey-color: grey;
+  }
+/* Text only card  (Vetical)*/
+.card-collection{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text-card-wrapper{
+    border-radius: 0.5rem;
+}
+.text-card-wrapper .card-heading{
+    padding: 0.5rem;
+    border-bottom:1px solid grey;
+}
+.text-card-wrapper .card-body{
+    padding: 0.3em 0.5rem 0.7em 0.5rem; 
+}
+.text-card-wrapper .card-footer{
+    border-top: 1px solid grey;
+}
+.text-card-wrapper .card-footer .btn-link{
+    padding: 0.7em 0.5rem;
+}
+.text-card-wrapper .card-heading{
+    position:relative;
+}
+.text-card-wrapper .card-heading .btn-link{
+    position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;
+    padding:0.3rem;
+    font-weight: bolder;
+    color: var(--grey-color);
+}
+
+.card-shadow-dark{
+    box-shadow: 0 0 10px 1px grey;
+}
+.card-shadow-light{
+    box-shadow: 0 0 10px 1px rgba(245, 245, 245, 0.76);
+}
+
+
+/* Horizontal cards */
+.image-card-wrapper{
+    border-radius: 0.5rem;
+    
+}
+.outlined{
+    border: 1px solid grey;
+}
+.card-image img{
+    width: 100%;
+   height: 10rem;
+   border-radius: 0.5rem 0.5rem 0 0;
+}
+.image-card-wrapper .card-heading{
+    padding: 0.2rem 0.7rem;
+}
+.image-card-wrapper .card-body{
+    padding: 0.2rem 0.7rem;
+}
+.image-card-wrapper .btn-primary{
+    margin:  0.5rem 0.7rem;
+}
+.image-card-wrapper .card-footer .btn-link{
+    padding: 0.7rem 0.7rem;
+}
+.image-card-wrapper .card-image{
+    position: relative;
+}
+.image-card-wrapper .card-image .btn-link{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding:0.5rem;
+    font-weight: bolder;
+    color: var(--grey-color);
+}
+.product-details-wrapper{
+    padding:0.4rem;
+}
+.card-image.greater-height img{
+    height:15rem;
+}
+.image-card-wrapper .card-image .badge-success{
+    position: absolute;
+    top: 1rem;
+    left: -0.2rem;
+}
+
+/* For Text overlay */
+
+.image-card-wrapper .top-left{
+    position:absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    color: var(--white-color);
+}
+.image-card-wrapper .top-right{
+    position:absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: var(--white-color);
+}
+.image-card-wrapper .bottom-right{
+    position:absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: var(--white-color);
+}
+.image-card-wrapper .bottom-left{
+    position:absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    color: var(--white-color);
+}
+.image-card-wrapper .center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white-color);
+}

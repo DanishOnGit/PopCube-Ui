@@ -1,0 +1,34 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap");
+@import url("css-files/alerts.css");
+@import url("css-files/avatars.css");
+@import url("css-files/badges.css");
+@import url("css-files/buttons.css");
+@import url("css-files/cards.css");
+@import url("css-files/inputs.css");
+@import url("css-files/modals.css");
+@import url("css-files/navigation-bars.css");
+@import url("css-files/ratings.css");
+@import url("css-files/toasts.css");
+@import url("css-files/typography.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --pri-color: #fc452e;
+  --sec-color: #db1d08;
+  --green-color: rgb(4, 122, 58);
+  --danger-color: rgb(223, 4, 4);
+  --link-color: rgb(11, 123, 250);
+  --grey-color: grey;
+  --lightGreen-color:#84f1c9;
+  --darkGreen-color:#1b7886;
+  --lightPink-color:#fcc5c5;
+  --darkPink-color:#dc3545;
+  --lightBlue-color:#7fd2e6;
+  --darkBlue-color:#39749e;
+}

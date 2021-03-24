@@ -1,0 +1,236 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --pri-color: #fc452e;
+  --sec-color: #db1d08;
+  --light-orange: rgb(255, 201, 180);
+  --light-purple: #754c9b;
+  --light-grey:rgb(190, 190, 190);
+  --very-dark-grey:rgb(105, 104, 104);
+  --white-color: white;
+  --black-color: black;
+}
+
+/* GENERAL STYLING */
+
+section {
+  margin-bottom: 2rem;
+}
+iframe {
+  width: 100%;
+  min-height: 50vh;
+}
+hr {
+  height: 4px;
+  background-color: black;
+}
+h1.display-5 {
+  color: var(--pri-color);
+}
+.main-section .display-6 {
+  margin-top: 2rem;
+  font-weight: 500;
+  color: var(--light-purple);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.examples-wrapper {
+  margin-bottom: 1rem;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  box-shadow: 0 0 30px 0 var(--light-grey) ;
+}
+.brand-logo {
+  font-size: 2.5rem;
+}
+.brand-logo span{
+  color:var(--pri-color);
+}
+
+.nav-list {
+  padding-inline-start: 0;
+  list-style: none;
+  display: flex;
+  margin-left: -9rem;
+}
+.nav-list li {
+  font-weight: 500;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.nav-list li:hover {
+  color: var(--pri-color);
+  transition: 300ms ease;
+}
+.nav-container .small{
+  color: var(--very-dark-grey);
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 2rem;
+}
+
+/* SIDEBAR STYLING */
+.sidebar {
+  position: sticky;
+  top: 0rem;
+  overflow-y: hidden;
+  height: 100vh;
+  padding: 1rem;
+  border-right: 2px solid rgba(206, 205, 205, 0.548);
+  /* background-color: yellowgreen; */
+}
+
+.sidebar_list {
+  margin-left: 2rem;
+  padding-inline-start: 0;
+  list-style: none;
+}
+.sidebar_list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.sidebar_list li:hover {
+  color: var(--pri-color);
+  background-color: var(--light-orange);
+  transform: translateX(7%);
+  transition: 300ms ease;
+}
+
+/* MAIN SECTION STYLING */
+.main-section {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+/* ALERTS SECTION STYLING */
+.alerts-collection,
+.avatars-collection,
+.badges-collection,
+.buttons-collection,
+.cards-collection,
+.inputs-collection,
+.modals-collection,
+.navbars-collection,
+.ratings-collection,
+.toasts-collection,
+.typography-collection {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.alerts-collection div {
+  margin: 1rem;
+}
+.avatars-collection > div {
+  margin: 1rem;
+}
+.badges-collection div {
+  margin: 1rem;
+}
+.buttons-collection div {
+  margin: 1rem;
+}
+.cards-collection ~ div {
+  margin: 1rem 2rem;
+}
+.cards-collection .inputs-collection div {
+  margin: 0 1rem;
+}
+.modals-collection div {
+  margin: 1rem;
+}
+.navbars-collection > div {
+  margin: 1rem;
+}
+.ratings-collection div{
+  margin: 1rem;
+}
+.toasts-collection div{
+  margin: 1rem;
+}
+.typography-collection div {
+  margin: 1rem;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  margin-top: 2rem;
+  padding: 2.5rem;
+  background-color: black;
+  color: white;
+}
+.index-file-footer{
+  position: absolute; 
+  bottom: 0; 
+  width: 100%
+}
+.code-icon{
+  color: var(--pri-color);
+}
+
+.fa-heart {
+  color: var(--pri-color);
+}
+footer p {
+  margin-bottom: 0.5rem;
+}
+footer ul {
+  width: fit-content;
+  /* background-color: yellowgreen; */
+  margin: auto;
+  font-size: 1.5rem;
+}
+footer li:hover {
+  color: var(--pri-color);
+  transition: 300ms ease;
+}
+
+/* ABOUT PAGE STYLING */
+.about-container {
+  width: 50rem;
+  margin: auto;
+}
+.what-wrapper,
+.how-wrapper {
+  margin: 1.5rem 0;
+}
+
+/* HOME PAGE STYLING */
+.home-page_text-container {
+  width: 40rem;
+  padding: 3rem;
+  text-align: center;
+  margin: auto;
+}
+.home-page_text-container p {
+  margin: 1rem 0;
+  color: grey;
+}
+.home-page_text-container button {
+  margin-bottom: 2rem;
+}
+
+

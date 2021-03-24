@@ -1,0 +1,69 @@
+:root {
+    --pri-color: #ff4654;
+    --sec-color: #c32e42;
+    --green-color: rgb(4, 122, 58);
+    --danger-color: rgb(223, 4, 4);
+    --link-color: rgb(11, 123, 250);
+    --grey-color: grey;
+    --light-grey-color:rgb(207, 207, 207);
+  }
+  .input-field-wrapper{
+      display: flex; 
+  }
+
+
+  /* First type */
+ .input-text{
+    background-color:var(--light-grey-color);
+    padding: 0.2em;
+    border:1px solid var(--grey-color);
+} 
+.basic-addon-1{
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+.input-field-1{
+    flex-grow: 1;
+    padding: 0.2em;
+    border-radius: 0 0.3rem 0.3rem 0;
+    outline-color: var(--link-color);
+    border-top: 1px solid var(--grey-color);
+    border-bottom: 1px solid var(--grey-color);
+    border-right: 1px solid var(--grey-color);
+    border-left: none;
+}
+
+/* second type */
+.input-field-2{
+    flex-grow: 1;
+    padding: 0.5em;
+    border-radius: 0.3rem 0 0 0.3rem;
+    outline-color: var(--link-color);
+    border-top: 1px solid var(--grey-color);
+    border-bottom: 1px solid var(--grey-color);
+    border-left: 1px solid var(--grey-color);
+    border-right: none;
+}
+.basic-addon-2{
+    border-radius:0 0.3rem 0.3rem 0;
+}
+
+  /* Set of Sizes */
+  .size-medium{
+    padding: 0.4em;
+    font-size: 1em;
+}
+.size-large{
+    padding: 0.6em;
+    font-size: 1.1em
+}
+
+/* Setting feedbacks */
+
+.invalid-feedback{
+        color: var(--sec-color);
+    font-size: 0.95em;
+}
+.valid-feedback{
+    color: var(--green-color);
+font-size: 0.95em;
+}

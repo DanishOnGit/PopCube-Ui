@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="doc.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Popcube UI</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav-container">
+        <nav class="nav-wrap" id="back">
+          <div class="nav-brand">
+            <h1 class="brand-logo">
+              PopCube <span>Ui</span>
+            </h1>
+          </div>
+          <div class="nav-list-container">
+            <ul class="nav-list">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="docs.html">DOCS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="small">
+              <span
+                ><a
+                  class="link"
+                  href="https://github.com/DanishOnGit/New-component-library"
+                  target="_blank"
+                  title="Github repo"
+                  ><i class="fab fa-github"></i></a
+              ></span>
+              V 1.0
+            </p>
+          </div>
+        </nav>
+      </div>
+      <div class="content-container">
+        <div class="sidebar">
+          <div class="sidebar_list-container">
+            <ul class="sidebar_list">
+              <a href="#alerts-sec"><li>Alerts</li></a>
+              <a href="#avatars-sec"><li>Avatars</li></a>
+              <a href="#badges-sec"><li>Badges</li></a>
+              <a href="#buttons-sec"><li>Buttons</li></a>
+              <a href="#cards-sec"><li>Cards</li></a>
+              <a href="#inputs-sec"><li>Inputs</li></a>
+              <a href="#modals-sec"><li>Modals</li></a>
+              <a href="#navbars-sec"><li>Navigation</li></a>
+              <a href="#ratings-sec"><li>Ratings</li></a>
+              <a href="#toasts-sec"><li>Toasts</li></a>
+              <a href="#typography-sec"><li>Typography</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="main-section">
+          <section class="alert-sec" id="alerts-sec">
+            <h1 class="display-5">Alerts</h1>
+            <p>
+              Provide contextual feedback messages for typical user actions!
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                You can have any length of text inside them. They also come with
+                an optional dismiss button.
+              </p>
+            </div>
+
+            <div class="alerts-collection">
+              <div class="error">
+                <p>
+                  <i class="fas fa-exclamation"></i> There was an error
+                  processing your request
+                </p>
+              </div>
+              <div class="success">
+                <p><i class="fas fa-check"></i> File upload successfull</p>
+              </div>
+              <div class="warning">
+                <p>
+                  <i class="fas fa-exclamation"></i> Account about to expire
+                </p>
+              </div>
+              <div class="info">
+                <p>
+                  <i class="fas fa-info"></i> You can download multiple images.
+                  <span><i class="fas fa-times"></i></span>
+                </p>
+              </div>
+
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation%2522%253E%253C%252Fi%253E%2520There%2520was%2520an%2520error%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520processing%2520your%2520request%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%253Ci%2520class%253D%2522fas%2520fa-check%2522%253E%253C%252Fi%253E%2520File%2520upload%2520successfull%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation%2522%253E%253C%252Fi%253E%2520Account%2520about%2520to%2520expire%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info%2522%253E%253C%252Fi%253E%2520You%2520can%2520download%2520multiple%2520images.%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-%2509%2509%2509%2509%2509times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+
+          <section class="avatar-sec" id="avatars-sec">
+            <h1 class="display-5">Avatars</h1>
+            <p>
+              The Avatar component is used to represent a user, and displays the
+              profile picture, initials or fallback icon.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                You get four sizes to choose from. Also, an optional badge can
+                be included to display if user is online/offline.
+              </p>
+            </div>
+            <div class="avatars-collection">
+              <div>
+                <div class="avatar-wrapper-small" style="display: inline">
+                  <img
+                    class="avatar-small"
+                    src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
+                    alt="avatar"
+                  />
+                  <div class="green-badge"></div>
+                </div>
+
+                <div class="avatar-wrapper-normal" style="display: inline">
+                  <img
+                    class="avatar-normal"
+                    src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
+                    alt="avatar"
+                  />
+                  <div class="red-badge"></div>
+                </div>
+
+                <div class="avatar-wrapper-medium" style="display: inline">
+                  <img
+                    class="avatar-medium"
+                    src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
+                    alt="avatar"
+                  />
+                  <div class="green-badge"></div>
+                </div>
+
+                <div class="avatar-wrapper-large" style="display: inline">
+                  <img
+                    class="avatar-large"
+                    src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
+                    alt="avatar"
+                  />
+                  <div class="green-badge"></div>
+                </div>
+              </div>
+
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522avatar-wrapper-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-small%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522images%255Cshahin-khalaji-Ac5sm2yOLFc-unsplash.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522green-badge%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-wrapper-normal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-normal%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522images%255Cshahin-khalaji-Ac5sm2yOLFc-unsplash.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522red-badge%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-wrapper-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-medium%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522images%255Cshahin-khalaji-Ac5sm2yOLFc-unsplash.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522green-badge%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-wrapper-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-large%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522images%255Cshahin-khalaji-Ac5sm2yOLFc-unsplash.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522green-badge%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="badges-sec" id="badges-sec">
+            <h1 class="display-5">Badges</h1>
+            <p>
+              Badges can be used for various labelling and other purposes like
+              showing a count.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                You get a total of four badges. The text can be changed to suit
+                your needs.
+              </p>
+            </div>
+            <div class="badges-collection">
+              <div>
+                <span class="badge-error">ERROR</span>
+                <span class="badge-success">SUCCESS</span>
+                <span class="badge-warning">WARNING</span>
+                <span class="badge-info">INFO</span>
+                <span class="badge-neutral">NEUTRAL</span>
+                <span class="badge-neutral pill">NEUTRAL</span>
+              </div>
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%2509%2509%253Cspan%2520class%253D%2522badge-error%2522%253EERROR%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-success%2522%253ESUCCESS%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-warning%2522%253EWARNING%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-info%2522%253EINFO%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-neutral%2522%253ENEUTRAL%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-neutral%2520pill%2522%253ENEUTRAL%253C%252Fspan%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="buttons-sec" id="buttons-sec">
+            <h1 class="display-5">Buttons</h1>
+            <p>
+              Different buttons serve different semantic purpose. We provide you
+              a variety of buttons to suit your needs.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                You can choose from the buttons below. They come in various
+                colors and sizes.
+              </p>
+            </div>
+            <div class="buttons-collection">
+              <div>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-link">Link</button>
+                <a href="#back"
+                  ><button class="btn-float">
+                    <i class="fas fa-arrow-up"></i></button
+                ></a>
+                <button class="btn-icon btn-icon-hover">
+                  <i class="fas fa-home"></i>
+                </button>
+                <button class="btn-outline-icon btn-outline-icon-hover">
+                  <i class="fas fa-home"></i>
+                </button>
+
+                <br /><br />
+
+                <button class="btn btn-outline-primary">Primary</button>
+                <button class="btn btn-outline-secondary">Secondary</button>
+                <button class="btn btn-outline-success">Success</button>
+                <button class="btn btn-outline-danger">Danger</button>
+
+                <br /><br />
+
+                <button class="btn btn-large btn-primary">Large</button>
+                <button class="btn btn-small btn-secondary">cancel</button>
+              </div>
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ELink%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-icon-hover%2522%253E%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outline-icon%2520btn-outline-icon-hover%2522%253E%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-large%2520btn-primary%2522%253ELarge%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-small%2520btn-secondary%2522%253Ecancel%253C%252Fbutton%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="cards-sec" id="cards-sec">
+            <h1 class="display-5">Cards</h1>
+            <p>
+              A card is a flexible content container. It can include headers and
+              footers and various other options.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                These cards are built using flexbox, and hence help you with
+                responsiveness. They have no margins and no width by default. So
+                feel free to set your own width and margin to these.<br />
+                We have also included text only cards. You can customize these
+                cards with different buttons,box-shadow,outline,badges and close
+                buttons as per your choice.
+              </p>
+            </div>
+            <div class="cards-collection">
+              <div>
+                <div style="display: flex; justify-content: space-evenly">
+                  <div
+                    class="text-card-wrapper card-shadow-dark"
+                    style="width: 14rem"
+                  >
+                    <div class="card-heading">
+                      <h1>Simple Heading</h1>
+                    </div>
+                    <div>
+                      <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, amet optio, reiciendis maiores provident a
+                        aperiam id architecto, laboriosam quod vitae repellendus
+                        voluptates corporis quas. Similique minima veritatis
+                        ratione in.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-link">Sure</button>
+                      <button class="btn btn-link">No,Thanks</button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="text-card-wrapper card-shadow-dark"
+                    style="width: 14rem"
+                  >
+                    <div class="card-heading">
+                      <h1>Simple Heading</h1>
+                      <button class="btn btn-link">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, amet optio, reiciendis maiores provident a
+                        aperiam id architecto, laboriosam quod vitae repellendus
+                        voluptates corporis quas. Similique minima veritatis
+                        ratione in.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="image-card-wrapper outlined" style="width: 15rem">
+                    <div class="card-image greater-height">
+                      <img
+                        src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
+                        alt="..."
+                      />
+                      <span class="badge-success">New</span>
+                    </div>
+                    <div class="product-details-wrapper">
+                      <p class="strong">Ether</p>
+                      <p>Pure Cotton polo tshirt</p>
+                      <p>
+                        <span class="strong">Rs395 </span
+                        ><span class="line-through">Rs799 </span
+                        ><span style="color: #fc452e">(50% OFF)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div style="display: flex; justify-content: space-evenly">
+                  <div class="image-card-wrapper outlined" style="width: 25rem">
+                    <div class="card-image">
+                      <img
+                        src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
+                        alt="..."
+                      />
+                      <button class="btn btn-link">
+                        <i class="fas fa-times"></i>
+                      </button>
+                      <span class="badge-success">New</span>
+                    </div>
+                    <div>
+                      <h3 class="card-heading">A simple heading.</h3>
+                    </div>
+                    <div>
+                      <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, amet optio, reiciendis maiores provident a
+                        aperiam id architecto, laboriosam quod vitae repellendus
+                        voluptates corporis quas. Similique minima veritatis
+                        ratione in.
+                      </p>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary">Primary</button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="image-card-wrapper card-shadow-dark"
+                    style="width: 25rem"
+                  >
+                    <div class="card-image">
+                      <img
+                        src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
+                        alt="..."
+                      />
+                      <p class="top-left">Text Overlay</p>
+                      <p class="top-right">Text Overlay</p>
+                      <p class="bottom-left">Text Overlay</p>
+                      <p class="bottom-right">Text Overlay</p>
+                      <p class="center">Text Overlay</p>
+                    </div>
+                    <div>
+                      <h3 class="card-heading">A simple heading.</h3>
+                    </div>
+
+                    <div>
+                      <p class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, amet optio, reiciendis maiores provident a
+                        aperiam id architecto, laboriosam quod vitae repellendus
+                        voluptates corporis quas. Similique minima veritatis
+                        ratione in.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-link">Sure</button>
+                      <button class="btn btn-link">No,Thanks</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252FType1%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-wrapper%2520card-shadow-dark%2522%2520style%253D%2522width%253A%252015rem%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ESimple%2520Heading%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quisquam%252C%2520amet%2520optio%252C%2520reiciendis%2520maiores%2520provident%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aperiam%2520id%2520architecto%252C%2520laboriosam%2520quod%2520vitae%2520repellendus%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520corporis%2520quas.%2520Similique%2520minima%2520veritatis%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520in.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ESure%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ENo%252CThanks%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%252F%252FType2%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-wrapper%2520card-shadow-dark%2522%2520style%253D%2522width%253A%252015rem%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ESimple%2520Heading%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quisquam%252C%2520amet%2520optio%252C%2520reiciendis%2520maiores%2520provident%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aperiam%2520id%2520architecto%252C%2520laboriosam%2520quod%2520vitae%2520repellendus%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520corporis%2520quas.%2520Similique%2520minima%2520veritatis%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520in.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+                  frameborder="0"
+                ></iframe>
+                <br />
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%252F%252FType%25203%250A%2509%2509%253Cdiv%2520class%253D%2522image-card-wrapper%2520outlined%2522%2520style%253D%2522width%253A%252015rem%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2520greater-height%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%255Cmateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522...%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-success%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product-details-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522strong%2522%253EEther%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EPure%2520Cotton%2520polo%2520tshirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522strong%2522%253ERs395%2520%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522line-through%2522%253ERs799%2520%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%253Cspan%2520style%253D%2522color%253A%2520%2523fc452e%2522%253E%2850%2525%2520OFF%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%252F%252FType%25204%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-card-wrapper%2520outlined%2522%2520style%253D%2522width%253A%252025rem%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%255Cluke-stackpoole-eWqOgJ-lfiI-unsplash.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522...%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-success%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-heading%2522%253EA%2520simple%2520heading.%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quisquam%252C%2520amet%2520optio%252C%2520reiciendis%2520maiores%2520provident%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aperiam%2520id%2520architecto%252C%2520laboriosam%2520quod%2520vitae%2520repellendus%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520corporis%2520quas.%2520Similique%2520minima%2520veritatis%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520in.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                  frameborder="0"
+                ></iframe>
+                <br />
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%252F%252FType5%250A%2520%2520%253Cdiv%2520class%253D%2522image-card-wrapper%2520card-shadow-dark%2522%2520style%253D%2522width%253A%252025rem%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%255Cluke-stackpoole-eWqOgJ-lfiI-unsplash.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522...%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522top-left%2522%253EText%2520Overlay%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522top-right%2522%253EText%2520Overlay%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bottom-left%2522%253EText%2520Overlay%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522bottom-right%2522%253EText%2520Overlay%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522center%2522%253EText%2520Overlay%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-heading%2522%253EA%2520simple%2520heading.%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quisquam%252C%2520amet%2520optio%252C%2520reiciendis%2520maiores%2520provident%2520a%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aperiam%2520id%2520architecto%252C%2520laboriosam%2520quod%2520vitae%2520repellendus%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptates%2520corporis%2520quas.%2520Similique%2520minima%2520veritatis%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520in.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ESure%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ENo%252CThanks%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="inputs-sec" id="inputs-sec">
+            <h1 class="display-5">Inputs</h1>
+            <p>
+              Extend control over your form fields by adding buttons or text on
+              either side of the input element.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                You can choose to have buttons or text on either side of your
+                input field. It can take any text length as desired.
+              </p>
+            </div>
+            <div class="inputs-collection">
+              <div>
+                <div class="input-field-wrapper">
+                  <span class="input-text basic-addon-1">@</span>
+                  <input
+                    class="input-field-1"
+                    type="text"
+                    placeholder="Username"
+                  />
+                </div>
+                <br />
+                <div class="input-field-wrapper">
+                  <input
+                    class="input-field-2"
+                    type="text"
+                    placeholder="Email id"
+                  />
+                  <span class="input-text basic-addon-2">@example.com</span>
+                </div>
+                <br />
+
+                <div class="input-field-wrapper">
+                  <span class="input-text size-medium basic-addon-1"
+                    >medium</span
+                  >
+                  <input
+                    class="input-field-1 size-medium"
+                    type="text"
+                    placeholder="Username"
+                  />
+                </div>
+                <br />
+
+                <div class="input-field-wrapper">
+                  <span class="input-text size-large basic-addon-1">large</span>
+                  <input
+                    class="input-field-1 size-large"
+                    type="text"
+                    placeholder="Username"
+                  />
+                </div>
+                <br />
+
+                <div class="input-field-wrapper">
+                  <button class="btn btn-secondary basic-addon-1">
+                    Secondary
+                  </button>
+                  <input
+                    class="input-field-1 size-medium"
+                    type="text"
+                    placeholder="Username"
+                  />
+                </div>
+
+                <br />
+                <div class="input-field-wrapper">
+                  <input
+                    class="input-field-2 size-medium"
+                    type="password"
+                    placeholder="Enter password"
+                  />
+                  <button class="btn btn-secondary basic-addon-2">
+                    show password
+                  </button>
+                </div>
+                <p style="margin-left: 1rem">
+                  <span class="strong">USAGE:</span> Just copy the code below
+                  and you are good to go !
+                </p>
+
+                <div class="carbon-code">
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%253Cdiv%2520class%253D%2522input-field-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-text%2520basic-addon-1%2522%253E%2540%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field-1%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Username%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-field-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field-2%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Email%2520id%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-text%2520basic-addon-2%2522%253E%2540example.com%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-field-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-text%2520size-medium%2520basic-addon-1%2522%253Emedium%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-field-1%2520size-medium%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Username%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-field-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-text%2520size-large%2520basic-addon-1%2522%253Elarge%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-field-1%2520size-large%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Username%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-field-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520basic-addon-1%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-field-1%2520size-medium%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Username%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-field-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-field-2%2520size-medium%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520password%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520basic-addon-2%2522%253Eshow%2520password%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="modals-sec" id="modals-sec">
+            <h1 class="display-5">Modals</h1>
+            <p>They can be used to add dialogues to your site.</p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                Modals have <span class="mark">"position:fixed"</span> attached
+                to them. They are positioned over everything else in the
+                document. You can close them by clicking on the close buttons.
+                Also you can set your desired width.
+              </p>
+            </div>
+            <div class="modals-collection">
+              <div>
+                <button class="btn btn-primary" id="launchModal">
+                  Launch Modal
+                </button>
+              </div>
+              <div>
+                <div class="modal-wrapper" style="width: 25rem">
+                  <div class="modal-header">
+                    <h2>Modal title</h2>
+                    <span><i class="fas fa-times" id="closeIt"></i></span>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Obcaecati, nemo voluptatum id reprehenderit amet totam.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" id="closeMe">
+                      Close
+                    </button>
+                    <button class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2520%253Cdiv%2520class%253D%2522modal-wrapper%2522%2520style%253D%2522width%253A%252025rem%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EModal%2520title%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Obcaecati%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520nemo%2520voluptatum%2520id%2520reprehenderit%2520amet%2520totam.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%2520id%253D%2522closeMe%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ESave%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="navbar-sec" id="navbars-sec">
+            <h1 class="display-5">Navigation Bars</h1>
+            <p>
+              Includes space for including your brand logo and navigation links.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>You can choose from the below styles.</p>
+            </div>
+            <div class="navbars-collection">
+              <div>
+                <nav class="nav-wrapper-1">
+                  <div class="brand">LOGO.</div>
+                  <div>
+                    <ul
+                      class="list-items-flex list-non-bullet"
+                      id="list-addon-1"
+                    >
+                      <li>Home</li>
+                      <li>Profile</li>
+                      <li>About</li>
+                      <li>Contact</li>
+                    </ul>
+                  </div>
+                </nav>
+
+                <br />
+
+                <nav class="nav-wrapper-2">
+                  <div class="brand">LOGO.</div>
+                  <div>
+                    <ul
+                      class="list-items-flex list-non-bullet"
+                      id="list-addon-2"
+                    >
+                      <li>Home</li>
+                      <li>Profile</li>
+                      <li>About</li>
+                      <li>Contact</li>
+                    </ul>
+                  </div>
+                </nav>
+                <br />
+                <nav class="nav-wrapper-3">
+                  <div class="logoAndList-container">
+                    <div class="brand">LOGO.</div>
+                    <div class="list-centered">
+                      <ul
+                        class="list-items-flex list-non-bullet"
+                        id="list-addon-3"
+                      >
+                        <li>Home</li>
+                        <li>Profile</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="search-wrapper">
+                    <input
+                      class="search-wrapper_input"
+                      type="text"
+                      placeholder="Search"
+                    />
+                    <span><i class="fas fa-search"></i></span>
+                  </div>
+                </nav>
+                <br />
+                <nav class="nav-wrapper-4">
+                  <div class="logoAndList-container">
+                    <div class="brand">LOGO.</div>
+                    <div class="list-centered">
+                      <ul
+                        class="list-items-flex list-non-bullet"
+                        id="list-addon-3"
+                      >
+                        <li>Home</li>
+                        <li>Profile</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cta-wrapper">
+                    <a class="btn btn-outline-primary" href="">LOG IN</a>
+                    <a class="btn btn-primary" href="">SIGN UP</a>
+                  </div>
+                </nav>
+                <br />
+              </div>
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2520%2509%2509%2520%2520%2520%253Cnav%2520class%253D%2522nav-wrapper-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253ELOGO.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-items-flex%2520list-non-bullet%2522%2520id%253D%2522list-addon-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EProfile%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EContact%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522nav-wrapper-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253ELOGO.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-centered%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-items-flex%2520list-non-bullet%2522%2520id%253D%2522list-addon-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EProfile%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EContact%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%2520%2520%2520"
+                  frameborder="0"
+                ></iframe>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252FType3%2520%250A%253Cnav%2520class%253D%2522nav-wrapper-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522logoAndList-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253ELOGO.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-centered%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522list-items-flex%2520list-non-bullet%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522list-addon-3%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EProfile%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EContact%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522search-wrapper_input%2522%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%2520%2520%252F%252FType%25204%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522nav-wrapper-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522logoAndList-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253ELOGO.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-centered%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-items-flex%2520list-non-bullet%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522list-addon-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EHome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EProfile%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EAbout%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EContact%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522cta-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-outline-primary%2522%2520href%253D%2522%2522%253ELOG%2520IN%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-primary%2522%2520href%253D%2522%2522%253ESIGN%2520UP%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="ratings-sec" id="ratings-sec">
+            <h1 class="display-5">Ratings</h1>
+            <p>Rating component is used to get feedback from the user.</p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>We have a star rating component as shown below.</p>
+            </div>
+            <div class="ratings-collection">
+              <div class="star-rating-wrapper">
+                <label>
+                  <input class="star-rating-input" type="checkbox" />
+                  <i class="fas fa-star star-rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-rating-input" type="checkbox" />
+                  <i class="fas fa-star star-rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-rating-input" type="checkbox" />
+                  <i class="fas fa-star star-rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-rating-input" type="checkbox" />
+                  <i class="fas fa-star star-rating-icon"></i>
+                </label>
+                <label>
+                  <input class="star-rating-input" type="checkbox" />
+                  <i class="fas fa-star star-rating-icon"></i>
+                </label>
+              </div>
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522star-rating-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520star-rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520star-rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520star-rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520star-rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522star-rating-input%2522%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520star-rating-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="toasts-sec" id="toasts-sec">
+            <h1 class="display-5">Toasts</h1>
+            <p>
+              Toasts are simple notifications used to notify the user about
+              various things.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                You can choose from the following three toast types. They come
+                with an optional close button.
+              </p>
+            </div>
+            <div class="toasts-collection">
+              <div>
+                <div>
+                  <button class="btn btn-outline-primary" id="showToast">
+                    Show Toast
+                  </button>
+                </div>
+                <div class="toast-wrapper success-toast" id="exampleToast">
+                  <span>Saved! </span> <i class="fas fa-times close-btn"></i>
+                </div>
+
+                <div class="toast-wrapper success-toast">
+                  <span>Saved! </span> <i class="fas fa-times"></i>
+                </div>
+                <div class="toast-wrapper failure-toast">
+                  <span>Something is wrong!</span> <i class="fas fa-times"></i>
+                </div>
+                <div class="toast-wrapper info-toast">
+                  <span>Saving...</span> <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cdiv%2520class%253D%2522toast-wrapper%2520success-toast%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ESaved%21%2520%253C%252Fspan%253E%253Ci%2520class%253D%2522fas%2520fa-times%2520%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522toast-wrapper%2520failure-toast%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ESomething%2520is%2520wrong%21%253C%252Fspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%253Cdiv%2520class%253D%2522toast-wrapper%2520info-toast%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ESaving...%253C%252Fspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%253C%252Fdiv%253E"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="typography-sec" id="typography-sec">
+            <h1 class="display-5">Typography</h1>
+            <p>
+              Use the various typographic styles to convey relevant meaning. You
+              get options for headings,paragraphs and lists. We also have other
+              headings, the Display headings, which are larger than usual in
+              size. Also, you can get the styles of heading tags, without using
+              the heading tag itself, simply by including the classnames
+              "h1-h6". You can also include an optional hover effect over the
+              lists.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                Use the relevant class names to get the desired style. You can
+                also combine class names. Use classnames as "display-1" (1 to 6
+                are available) to get larger texts. Lists can also have an
+                optional hover effect using classname "onHover".
+              </p>
+            </div>
+            <div class="typography-collection">
+              <div>
+                <h1 class="display-2">Very large text</h1>
+                <p class="h1">Paragraph-styled as h1 tag</p>
+                <p class="h2">Paragraph-styled as h2 tag</p>
+                <p class="h3">Paragraph-styled as h3 tag</p>
+                <p class="h4">Paragraph-styled as h4 tag</p>
+                <p class="h5">Paragraph-styled as h5 tag</p>
+                <p class="h6">Paragraph-styled as h6 tag</p>
+
+                <br />
+
+                <p class="strong">This is strong text.</p>
+                <p class="mark">This is marked text.</p>
+                <p class="italic">This is italic text.</p>
+                <p class="small">This is small text.</p>
+                <p class="underline">This is underlined text.</p>
+                <p class="line-through">This is a line-through text.</p>
+                <p class="centered">This is centered text</p>
+
+                <p class="strong">Following are the lists:</p>
+                <ul class="list-items-flex list-non-bullet onHover">
+                  <li>home</li>
+                  <li>profile</li>
+                  <li>about</li>
+                  <li>contact</li>
+                </ul>
+                <br />
+                <ul class="list-non-bullet">
+                  <li>home</li>
+                  <li>profile</li>
+                  <li>about</li>
+                  <li>contact</li>
+                </ul>
+
+                <ul class="list-non-bullet list-stacked list-stacked-hover">
+                  <li>You have a message!</li>
+                  <li>Somebody sent an email</li>
+                  <li>Checkout the latest news</li>
+                  <li>More information...</li>
+                </ul>
+              </div>
+
+              <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below and
+                you are good to go !
+              </p>
+
+              <div class="carbon-code">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522display-2%2522%253EVery%2520large%2520text%253C%252Fh1%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h1%2522%253EParagraph-styled%2520as%2520h1%2520tag%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h2%2522%253EParagraph-styled%2520as%2520h2%2520tag%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h3%2522%253EParagraph-styled%2520as%2520h3%2520tag%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h4%2522%253EParagraph-styled%2520as%2520h4%2520tag%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h5%2522%253EParagraph-styled%2520as%2520h5%2520tag%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253EParagraph-styled%2520as%2520h6%2520tag%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522strong%2522%253EThis%2520is%2520strong%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522mark%2522%253EThis%2520is%2520marked%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522italic%2522%253EThis%2520is%2520italic%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522small%2522%253EThis%2520is%2520small%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522underline%2522%253EThis%2520is%2520underlined%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522line-through%2522%253EThis%2520is%2520a%2520line-through%2520text.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522centered%2522%253EThis%2520is%2520centered%2520text%253C%252Fp%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-items-flex%2520list-non-bullet%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Ehome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Eprofile%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Eabout%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Econtact%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-non-bullet%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Ehome%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Eprofile%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Eabout%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253Econtact%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-non-bullet%2520list-stacked%2520list-stacked-hover%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EYou%2520have%2520a%2520message%21%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ESomebody%2520sent%2520an%2520email%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECheckout%2520the%2520latest%2520news%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EMore%2520information...%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="centered">
+        Made with <span class="code-icon" >&lt;&#47;&gt;</span> by Danish
+        Ahmed
+      </p>
+      <ul class="list-non-bullet list-items-flex">
+        <li>
+          <a
+            class="link"
+            href="https://github.com/DanishOnGit/New-component-library"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a class="link" href="https://twitter.com/sum1writes" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/danishahmed27"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="small centered" style="margin-top: 0.5rem; color: grey">
+        &copy; 2021 Popcube-Ui
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

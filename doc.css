@@ -182,9 +182,15 @@ footer {
   background-color: black;
   color: white;
 }
+.index-file-footer{
+  position: absolute; 
+  bottom: 0; 
+  width: 100%
+}
 .code-icon{
   color: var(--pri-color);
 }
+
 .fa-heart {
   color: var(--pri-color);
 }

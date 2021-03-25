@@ -11,7 +11,7 @@
   <body>
     <div class="main-container">
       <div class="nav-container">
-        <nav class="nav-wrap" id="back">
+        <nav class="nav-wrap">
           <div class="nav-brand">
             <h1 class="brand-logo">PopCube <span>Ui</span></h1>
           </div>
@@ -47,6 +47,8 @@
               <a href="#badges-sec"><li>Badges</li></a>
               <a href="#buttons-sec"><li>Buttons</li></a>
               <a href="#cards-sec"><li>Cards</li></a>
+              <a href="#grids-sec"><li>Grids</li></a>
+              <a href="#images-sec"><li>Images</li></a>
               <a href="#inputs-sec"><li>Inputs</li></a>
               <a href="#modals-sec"><li>Modals</li></a>
               <a href="#navbars-sec"><li>Navigation</li></a>
@@ -60,7 +62,7 @@
           <section class="getting-started-sec" id="getting-started-sec">
             <h1 class="display-5">Getting Started</h1>
             <p>Using PopCube-Ui is simple. Just follow the procedure below.</p>
-            <br/>
+            <br />
             <h3>Link the Css file:</h3>
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fpopcube-ui.netlify.app%252Fmain.css%2522%253E"
@@ -140,8 +142,8 @@
               </p>
             </div>
             <div class="avatars-collection">
-              <div>
-                <div class="avatar-wrapper-small" style="display: inline">
+              <div class="display-flex">
+                <div class="avatar-wrapper-small self-aligned">
                   <img
                     class="avatar-small"
                     src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
@@ -150,7 +152,7 @@
                   <div class="green-badge"></div>
                 </div>
 
-                <div class="avatar-wrapper-normal" style="display: inline">
+                <div class="avatar-wrapper-normal self-aligned">
                   <img
                     class="avatar-normal"
                     src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
@@ -159,7 +161,7 @@
                   <div class="red-badge"></div>
                 </div>
 
-                <div class="avatar-wrapper-medium" style="display: inline">
+                <div class="avatar-wrapper-medium self-aligned">
                   <img
                     class="avatar-medium"
                     src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
@@ -168,7 +170,7 @@
                   <div class="green-badge"></div>
                 </div>
 
-                <div class="avatar-wrapper-large" style="display: inline">
+                <div class="avatar-wrapper-large self-aligned">
                   <img
                     class="avatar-large"
                     src="images\mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg"
@@ -465,6 +467,97 @@
           <br />
 
           <hr />
+          <section class="grids-sec" id="grids-sec">
+            <h1 class="display-5">Grids</h1>
+            <p>
+             Grids are extremely helpful in responsive design. Use them to set an overall layout.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                Just add the relevant class name as shown below to get the desired grid type. You can choose between 2x2 and 4x4 grids, and can place any number of elements inside the grid parent.
+                
+              </p>
+            </div>
+            <div class="grids-collection">
+                <div>
+                  <div class="display-grid-2-2">
+                    <div class="child">Grid element</div>
+                    <div class="child">Grid element</div>
+                    <div class="child">Grid element</div>
+                    <div class="child">Grid element</div>
+                    <div class="child">Grid element</div>
+                    <div class="child">Grid element</div>
+                 </div>
+                 <br/>
+                 <br/>
+                 <div class="display-grid-4-4">
+                  <div class="child">Grid element</div>
+                  <div class="child">Grid element</div>
+                  <div class="child">Grid element</div>
+                  <div class="child">Grid element</div>
+                  <div class="child">Grid element</div>
+                  <div class="child">Grid element</div>
+                  <div class="child">Grid element</div>
+                  <div class="child">Grid element</div>
+               </div>
+               <p style="margin-left: 1rem">
+                <span class="strong">USAGE:</span> Just copy the code below
+                and you are good to go !
+              </p>
+              <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522display-grid-2-2%2522%253E%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522display-grid-4-4%2522%253E%253C%252Fdiv%253E" frameborder="0"></iframe>
+              </div>
+                </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+          <section class="images-sec" id="images-sec">
+            <h1 class="display-5">Images</h1>
+            <p>
+              Responsive images change to fit the parent's width. It's height
+              will get changed to keep the aspect-ratio same.
+            </p>
+            <div class="examples-wrapper">
+              <h1 class="display-6">Examples</h1>
+              <p>
+                Just add the relevant class name as shown below to make it
+                responsive. You can also obtain a round image.
+              </p>
+            </div>
+            <div class="images-collection">
+              <div>
+                <div class="img-wrapper">
+                  <img
+                    class="responsive"
+                    src="https://via.placeholder.com/1400x300/7FD2E6/ffffff?text=Responsive+Image"
+                    alt="..."
+                  />
+                </div>
+                
+                <div class="img-wrapper">
+                  <img
+                    class="rounded"
+                    src="https://via.placeholder.com/200x200/7FD2E6/ffffff?text=Round+Image"
+                    alt="..."
+                  />
+                </div>
+                <p style="margin-left: 1rem">
+                  <span class="strong">USAGE:</span> Just copy the code below
+                  and you are good to go !
+                </p>
+                <div class="carbon-code">
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=cobalt&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522responsive%2522src%253D%2522example.jpg%2522%2520alt%253D%2522...%2522%2520%252F%253E%2520%250A%2520%2520%250A%253Cimg%2520class%253D%2522rounded%2522src%253D%2522example.jpg%2522%2520alt%253D%2522...%2522%2520%252F%253E" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br />
+
+          <hr />
+
           <section class="inputs-sec" id="inputs-sec">
             <h1 class="display-5">Inputs</h1>
             <p>

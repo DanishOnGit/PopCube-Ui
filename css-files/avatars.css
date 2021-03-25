@@ -1,3 +1,11 @@
+.avatars-collection .display-flex{
+  display:flex;
+  align-items: flex-end;
+
+}
+.self-aligned{
+  margin-right: 1rem;
+}
 .avatar-small{
     border-radius: 50%;
     height: 2.8rem;

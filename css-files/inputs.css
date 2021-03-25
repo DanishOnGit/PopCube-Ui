@@ -15,7 +15,7 @@
   }
   .input-field-wrapper span{
     max-width: 100%;
-    word-wrap: break-word;
+    word-break: break-all;
 }
 
 

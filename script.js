@@ -37,3 +37,8 @@ function checkPreviousStars(id){
         }
     }
 }
+
+//For responsive navbar
+const navUl=document.getElementById("nav-list")
+const hamburger=document.getElementById("hamburger")
+hamburger.addEventListener("click",()=>navUl.classList.toggle("active"))

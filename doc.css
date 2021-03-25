@@ -50,7 +50,6 @@ a {
 
 /* NAVBAR STYLING */
 .hamburger{
-  margin-left: 20rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -79,7 +78,7 @@ a {
   padding-inline-start: 0;
   list-style: none;
   display: flex;
-  margin-left: -9rem;
+  margin-left: -21rem;
 }
 .nav-list li {
   font-weight: 500;
@@ -257,7 +256,6 @@ footer li:hover {
   .nav-wrap{
     padding:1rem;
   }
-  
   .nav-list{
     display: none;
     width:100%;
@@ -278,6 +276,7 @@ footer li:hover {
   }
   .main-section{
     margin-left: 1rem;
+    display: block;
   }
   .sidebar{
     height: max-content;

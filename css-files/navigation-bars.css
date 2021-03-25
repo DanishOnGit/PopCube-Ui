@@ -53,7 +53,7 @@ transition: 300ms ease;
     justify-content: space-between;
     padding: 1rem 3rem;
 }
-.nav-wrapper-3 .logoAndList-container,.nav-wrapper-4 .logoAndList-container{
+.nav-wrapper-3 .logoAndList-wrapper,.nav-wrapper-4 .logoAndList-wrapper{
     display: flex;
     align-items: center;
 }
@@ -101,4 +101,20 @@ transition: 300ms ease;
 .nav-wrapper-4 li:hover{
     color: var(--sec-color);
     transition: 300ms ease;
+}
+
+
+@media screen and (max-width:768px){
+    .nav-wrapper-1 ul ,.nav-wrapper-2 ul{
+        display: none;
+    }
+    .nav-wrapper-2{
+        justify-content: space-between;
+    }
+    .nav-wrapper-3 .list-centered,.nav-wrapper-3 .search-wrapper{
+        display: none;
+    }
+    .nav-wrapper-4 .list-centered,.nav-wrapper-4 .cta-wrapper{
+        display: none;
+    }
 }

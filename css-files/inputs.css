@@ -10,6 +10,12 @@
   .input-field-wrapper{
       display: flex; 
   }
+  .input-field-wrapper input{
+      max-width: 100%;
+  }
+  .input-field-wrapper span{
+    max-width: 100%;
+}
 
 
   /* First type */

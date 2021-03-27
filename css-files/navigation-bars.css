@@ -117,6 +117,9 @@ transition: 300ms ease;
     .nav-wrapper-1 ul ,.nav-wrapper-2 ul{
         display: none;
     }
+    .hamburger{
+        display: block;
+    }
     .nav-wrapper-2{
         justify-content: space-between;
     }

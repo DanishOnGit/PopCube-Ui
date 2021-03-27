@@ -322,5 +322,12 @@ margin-left: -6rem;
     display: flex;
     flex-wrap: wrap;
   }
+
+  /* About page styling */
+  .about-container{
+    width:85vw;
+  margin: 0 auto;
+  padding: 1rem;
+  }
 }
 

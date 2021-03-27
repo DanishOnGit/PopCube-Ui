@@ -103,6 +103,8 @@ a {
   padding-inline-start: 0;
   list-style: none;
   display: flex;
+}
+.margin-left-doc{
   margin-left: -21rem;
 }
 .nav-list li {
@@ -250,7 +252,8 @@ footer li:hover {
 
 /* ABOUT PAGE STYLING */
 .about-container {
-  width:100vw;
+  width:60vw;
+  margin: 0 auto;
   padding: 1rem;
 }
 .what-wrapper,
@@ -271,6 +274,12 @@ footer li:hover {
 }
 .home-page_text-container button {
   margin-bottom: 2rem;
+}
+.margin-left-index{
+  margin-left: -8rem;
+}
+.margin-left-about{
+margin-left: -6rem;
 }
 
 

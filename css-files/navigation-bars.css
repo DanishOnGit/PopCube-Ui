@@ -8,6 +8,15 @@
     --grey-color: grey;
   }
 
+  /* COMMON STYLING */
+
+  .hamburger{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+
   /* TYPE 1 */
 .nav-wrapper-1{
     display: flex;

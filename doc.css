@@ -19,6 +19,31 @@
 }
 
 /* GENERAL STYLING */
+body::-webkit-scrollbar {
+  width:0.75rem;     
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--very-dark-grey);     
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:var(--pri-color);    
+}
+
+.sidebar::-webkit-scrollbar {
+  width:0.1rem;     
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background:var(--light-grey);     
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color:var(--very-dark-grey);    
+}
+
+
 
 section {
   margin-bottom: 2rem;
